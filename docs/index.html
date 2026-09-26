@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="pt-BR" data-brand="pickle" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Vitrine interativa do Stupid Design System." />
+    <title>Stupid Design System — Pickle + Admin</title>
+    <link rel="stylesheet" href="../dist/stupid-design-system.css" />
+    <link rel="stylesheet" href="./showcase.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <header class="topbar">
+      <a class="brandmark" href="#top" aria-label="Stupid Design System, início">
+        <span class="brandmark__bug">S.</span>
+        <span><strong>Stupid</strong><small>Design System · v0.1</small></span>
+      </a>
+      <nav aria-label="Principal">
+        <a href="#fundamentos">Fundamentos</a>
+        <a href="#componentes">Componentes</a>
+        <a href="#guidelines">Guidelines</a>
+      </nav>
+      <div class="theme-controls" aria-label="Configuração do tema">
+        <div class="segmented" role="group" aria-label="Família visual">
+          <button data-set-brand="pickle" aria-pressed="true">Pickle</button>
+          <button data-set-brand="admin" aria-pressed="false">Admin</button>
+        </div>
+        <button class="mode-toggle" id="mode-toggle" aria-label="Alternar modo claro ou escuro" title="Alternar modo">
+          <span aria-hidden="true">◐</span><span id="mode-label">Escuro</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <section class="hero" id="top">
+        <div class="hero__copy">
+          <p class="kicker">[ fonte de verdade visual ]</p>
+          <h1>Um sistema.<br /><em>Dois modos de falar.</em></h1>
+          <p class="hero__lead">Pickle dá personalidade a experiências livres. Admin transforma a mesma fundação em interfaces operacionais claras, densas e confiáveis.</p>
+          <div class="hero__actions">
+            <a class="sd-button sd-button--primary" href="#componentes">Explorar componentes</a>
+            <a class="sd-button sd-button--outline" href="../README.md">Ler documentação</a>
+          </div>
+          <dl class="hero__meta">
+            <div><dt>2</dt><dd>famílias</dd></div>
+            <div><dt>4</dt><dd>temas</dd></div>
+            <div><dt>9</dt><dd>componentes</dd></div>
+            <div><dt>AA</dt><dd>contraste alvo</dd></div>
+          </dl>
+        </div>
+        <div class="hero__visual" aria-label="Personagem pepino, origem da identidade Pickle">
+          <div class="hero__stamp">100% orgânico*</div>
+          <div class="hero__halo"></div>
+          <img src="../assets/brand/pickle-king.png" alt="Pepino verde com coroa dourada, corrente e expressão séria" />
+          <p>* visualmente. juridicamente, não prometemos nada.</p>
+        </div>
+      </section>
+
+      <section class="section" id="fundamentos">
+        <header class="section__head">
+          <div><p class="kicker">01 / Fundamentos</p><h2>Decisões antes de decoração.</h2></div>
+          <p>Cada valor primitivo alimenta uma função semântica. Trocar o tema muda a expressão, não o significado.</p>
+        </header>
+
+        <div class="color-grid" aria-label="Cores semânticas">
+          <article class="color-card color-card--primary"><span>Primary</span><strong>Agir</strong><code>--sd-color-action-primary</code></article>
+          <article class="color-card color-card--secondary"><span>Secondary</span><strong>Apoiar</strong><code>--sd-color-action-secondary</code></article>
+          <article class="color-card color-card--accent"><span>Accent</span><strong>Provocar</strong><code>--sd-color-accent</code></article>
+          <article class="color-card color-card--surface"><span>Surface</span><strong>Organizar</strong><code>--sd-color-surface</code></article>
+        </div>
+
+        <div class="foundations-grid">
+          <article class="spec-card type-spec">
+            <p class="spec-card__label">Tipografia</p>
+            <div class="type-display">Aa</div>
+            <h3>Heading que chega primeiro.</h3>
+            <p>Texto de interface que fica confortável por horas. Mono dá o tempero técnico quando a família Pickle está ativa.</p>
+            <div class="type-row"><span>12</span><span>14</span><span>16</span><span>20</span><span>36</span></div>
+          </article>
+          <article class="spec-card">
+            <p class="spec-card__label">Spacing · base 4px</p>
+            <div class="space-list">
+              <div><i style="width:4px"></i><code>xs · 4</code></div>
+              <div><i style="width:8px"></i><code>sm · 8</code></div>
+              <div><i style="width:16px"></i><code>md · 16</code></div>
+              <div><i style="width:24px"></i><code>lg · 24</code></div>
+              <div><i style="width:32px"></i><code>xl · 32</code></div>
+            </div>
+          </article>
+          <article class="spec-card">
+            <p class="spec-card__label">Radius & sombra</p>
+            <div class="shape-demo"><span>xs</span><span>md</span><span>xl</span></div>
+            <div class="shadow-demo">Elevação sem perder o chão.</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--tint" id="componentes">
+        <header class="section__head">
+          <div><p class="kicker">02 / Componentes</p><h2>Mesma anatomia. Outra atitude.</h2></div>
+          <p>Troque a família no topo. Hierarquia, estados e comportamento permanecem estáveis.</p>
+        </header>
+
+        <div class="component-grid">
+          <article class="demo-card demo-card--wide">
+            <div class="demo-card__head"><div><span>Actions</span><h3>Button</h3></div><code>.sd-button</code></div>
+            <div class="demo-row">
+              <button class="sd-button sd-button--primary">Salvar agora</button>
+              <button class="sd-button sd-button--secondary">Duplicar</button>
+              <button class="sd-button sd-button--outline">Cancelar</button>
+              <button class="sd-button sd-button--ghost">Detalhes</button>
+              <button class="sd-button sd-button--danger">Excluir</button>
+              <button class="sd-button sd-button--primary" aria-busy="true">Salvando</button>
+              <button class="sd-button sd-button--primary" disabled>Indisponível</button>
+            </div>
+          </article>
+
+          <article class="demo-card">
+            <div class="demo-card__head"><div><span>Form</span><h3>Input</h3></div><code>.sd-input</code></div>
+            <div class="form-stack">
+              <label class="sd-field"><span class="sd-label">Nome do projeto</span><input class="sd-input" value="Operação Pepino" /><span class="sd-hint">Visível para sua equipe.</span></label>
+              <label class="sd-field sd-field--error"><span class="sd-label">URL pública</span><input class="sd-input" value="pepino com espaço" aria-invalid="true" /><span class="sd-hint">Use apenas letras, números e hífens.</span></label>
+            </div>
+          </article>
+
+          <article class="demo-card">
+            <div class="demo-card__head"><div><span>Content</span><h3>Card</h3></div><code>.sd-card</code></div>
+            <div class="sd-card sd-card--interactive">
+              <p class="sd-card__eyebrow">Projeto / ativo</p>
+              <h3 class="sd-card__title">Central de comando</h3>
+              <p>Visão rápida da operação sem ruído desnecessário.</p>
+              <span class="sd-badge sd-badge--success">● Online</span>
+            </div>
+          </article>
+
+          <article class="demo-card demo-card--wide">
+            <div class="demo-card__head"><div><span>Data display</span><h3>Table</h3></div><code>.sd-table</code></div>
+            <div class="sd-table-wrap"><table class="sd-table"><thead><tr><th>Projeto</th><th>Status</th><th>Ambiente</th><th>Atualizado</th></tr></thead><tbody><tr><td>Mordomo</td><td><span class="sd-badge sd-badge--success">Saudável</span></td><td>Produção</td><td>há 2 min</td></tr><tr><td>Mayflix</td><td><span class="sd-badge sd-badge--warning">Atenção</span></td><td>Staging</td><td>há 18 min</td></tr><tr><td>FreeFAS</td><td><span class="sd-badge">Rascunho</span></td><td>Local</td><td>ontem</td></tr></tbody></table></div>
+          </article>
+
+          <article class="demo-card">
+            <div class="demo-card__head"><div><span>Feedback</span><h3>Toast</h3></div><code>.sd-toast</code></div>
+            <div class="toast-stack">
+              <div class="sd-toast sd-toast--success" role="status"><span>✓</span><div><strong>Deploy concluído</strong><p>Produção recebeu a versão 0.1.0.</p></div><button aria-label="Fechar">×</button></div>
+              <div class="sd-toast sd-toast--error" role="alert"><span>!</span><div><strong>Não foi dessa vez</strong><p>Revise as credenciais e tente novamente.</p></div><button aria-label="Fechar">×</button></div>
+            </div>
+          </article>
+
+          <article class="demo-card">
+            <div class="demo-card__head"><div><span>Overlay</span><h3>Dropdown + Modal</h3></div><code>nativos</code></div>
+            <div class="overlay-demo">
+              <div class="sd-dropdown" aria-label="Menu de exemplo"><button class="sd-dropdown__item" aria-selected="true">✎ Editar projeto</button><button class="sd-dropdown__item">⌘ Duplicar</button><button class="sd-dropdown__item">↓ Exportar</button></div>
+              <button class="sd-button sd-button--primary" id="open-modal">Abrir modal</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="guidelines">
+        <header class="section__head"><div><p class="kicker">03 / Guidelines</p><h2>Personalidade não é bagunça.</h2></div><p>Regras simples preservam reconhecimento, leitura e velocidade de implementação.</p></header>
+        <div class="rules-grid">
+          <article><span class="rule-icon rule-icon--do">✓</span><h3>Faça</h3><p>Use tokens semânticos. Reserve o acento para hierarquia, ação e feedback.</p></article>
+          <article><span class="rule-icon rule-icon--dont">×</span><h3>Evite</h3><p>Não misture a geometria Pickle com a Admin no mesmo contexto de produto.</p></article>
+          <article><span class="rule-icon">⌁</span><h3>Movimento</h3><p>120–320ms, com propósito e alternativa para movimento reduzido.</p></article>
+          <article><span class="rule-icon">⌗</span><h3>Ícones</h3><p>Lucide, traço de 2px, sempre acompanhando — nunca substituindo — rótulos críticos.</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer><div class="brandmark"><span class="brandmark__bug">S.</span><span><strong>Stupid Design System</strong><small>Feito com rigor. E um pepino.</small></span></div><p>MIT · 2026 · Stupid.DLL</p></footer>
+
+    <dialog class="sd-modal" id="demo-modal" aria-labelledby="modal-title">
+      <div class="sd-modal__header"><div><p class="kicker">confirmação</p><h2 id="modal-title">Publicar alterações?</h2></div><button class="sd-button sd-button--ghost" data-close-modal aria-label="Fechar">×</button></div>
+      <div class="sd-modal__body"><p>As mudanças serão aplicadas ao ambiente de produção. Você poderá reverter pelo histórico.</p></div>
+      <div class="sd-modal__footer"><button class="sd-button sd-button--outline" data-close-modal>Cancelar</button><button class="sd-button sd-button--primary" data-close-modal>Publicar agora</button></div>
+    </dialog>
+    <script src="./showcase.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,21 @@
+{
+  "name": "@stupid-dll/design-system",
+  "version": "0.1.0",
+  "description": "A fonte de verdade visual da Stupid.DLL: Pickle para experiências livres e Admin para produtos operacionais.",
+  "type": "module",
+  "files": ["dist", "tokens", "themes", "components", "guidelines", "assets"],
+  "exports": {
+    ".": "./dist/stupid-design-system.css",
+    "./tokens": "./dist/tokens.css",
+    "./themes": "./dist/themes.css",
+    "./components": "./dist/components.css"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "preview": "npx serve . -l 4173"
+  },
+  "keywords": ["design-system", "design-tokens", "shadcn", "css", "stupid-dll"],
+  "license": "MIT"
+}
+

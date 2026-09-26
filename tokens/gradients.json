@@ -1,0 +1,2 @@
+{"gradient":{"brand":"linear-gradient(135deg, var(--sd-color-action-primary), var(--sd-color-action-secondary))","accent":"linear-gradient(135deg, var(--sd-color-accent), var(--sd-color-action-primary))","surface":"linear-gradient(180deg, var(--sd-color-surface-raised), var(--sd-color-surface))","scrim":"linear-gradient(180deg, transparent, rgb(0 0 0 / 0.72))"}}
+

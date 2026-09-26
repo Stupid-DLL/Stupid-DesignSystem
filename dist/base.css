@@ -1,0 +1,15 @@
+/* Stupid Design System v0.1.0 | MIT | generated — do not edit */
+*, *::before, *::after { box-sizing: border-box; }
+html { font-family: var(--sd-font-body); color: var(--sd-color-text); background: var(--sd-color-background); }
+body { margin: 0; background: var(--sd-color-background); color: var(--sd-color-text); line-height: var(--sd-line-normal); }
+h1, h2, h3, h4 { margin-block: 0 0.5em; font-family: var(--sd-font-heading); letter-spacing: var(--sd-heading-spacing); text-transform: var(--sd-heading-transform); line-height: var(--sd-line-tight); }
+p { margin-block: 0 1em; }
+a { color: var(--sd-color-action-primary); text-underline-offset: 0.2em; }
+button, input, select, textarea { font: inherit; }
+:focus-visible { outline: 3px solid var(--sd-color-focus); outline-offset: 3px; }
+::selection { color: var(--sd-color-on-secondary); background: var(--sd-color-action-secondary); }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
+
