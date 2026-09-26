@@ -5,7 +5,9 @@ Fonte de verdade visual compartilhada da **Stupid.DLL**. Um núcleo, duas vozes:
 - **Pickle / Livre** — expressivo, ácido e deliberadamente estranho. Usa oliva de pepino, lima elétrica, ciano, magenta, papel e preto. Ideal para portfólio, campanhas, labs e experiências autorais.
 - **Admin / Painéis** — preciso, contido e profissional. Mantém o verde como assinatura, usa superfícies neutras, densidade previsível e aliases compatíveis com shadcn/ui.
 
-![Dois personagens que originaram a identidade Pickle](assets/brand/pickle-classic.png)
+![Vitrine do Stupid Design System no tema Pickle Dark](assets/previews/showcase-pickle-dark.png)
+
+> A vitrine em `docs/` permite alternar ao vivo entre Pickle/Admin e Light/Dark.
 
 ## Começo rápido
 
